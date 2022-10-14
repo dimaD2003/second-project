@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    /* font-family: 'Rubik Dirt', cursive; */
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+body {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+.pannels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+}
+
+/* all p1 p2...p5 */
+.panel {
+
+    background: rgb(189, 54, 169);
+    box-shadow: rgb(25, 24, 26) 0 0 0 3px;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+
+    flex: 1;
+
+    transition:
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.08, 0.99, 0.93, -0.96),
+        background 0.2s;
+
+    font-size: 20px;
+
+    background-position: center;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*  each children of panels  abzats(p,p.... */
+.panel>* {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    /* border: 1px solid red; */
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Display', sans-serif;
+    /* text-decoration: uppercase; */
+    color: rgba(23, 232, 243, 0.862);
+    font-weight: 700;
+
+}
+
+.panel1>* {
+
+    color: #94a5ab;
+    /* opacity: 0.862; */
+
+}
+
+.panel2>* {
+    color: #9f944a
+}
+
+.panel3>* {
+    color:
+        #16a7ae;
+    opacity: 1;
+
+}
+
+.panel4>* {
+    color: rgba(232, 232, 232, 0.971);
+    opacity: 1;
+}
+
+
+.panel5>* {
+    color: #82dcf8;
+    opacity: 1;
+
+
+}
+
+.panel6>* {
+    color: #fff;
+    opacity: 1;
+
+
+}
+
+
+.panel p {
+    text-decoration: uppercase;
+    /* font-family: 'Rubik Dirt', cursive; */
+    font-size: 2em;
+    opacity: 0.755;
+
+}
+
+
+
+
+.panel p:first-child {
+    transform: translateY(-100%)
+}
+
+.panel.open-active p:first-child {
+    transform: translateY(0%)
+}
+
+.panel p:last-child {
+    transform: translateY(100%)
+}
+
+.panel.open-active p:last-child {
+    transform: translateY(0%)
+}
+
+.panel p:nth-child(2) {
+    font-size: 4em;
+    /* font-family: 'Rubik Dirt', cursive; */
+
+}
+
+
+
+
+.panel.open {
+    font-size: 35px;
+    flex: 5;
+}
+
+
+
+
+
+
+
+
+.panel1 {
+    background-image: url(im/isaac-mitchell-xBQK8qtpNuI-unsplash.jpg);
+}
+
+.panel2 {
+    background-image: url(im/dominik-sobota-6FS0FlBCrP0-unsplash.jpg);
+    /* background-position-y: 910px; */
+
+    background-size: cover
+}
+
+.panel3 {
+    background-image: url(im/2.jpg);
+    background-size: cover;
+}
+
+.panel4 {
+    background-image: url(im/3.jpg);
+    background-size: cover;
+}
+
+.panel5 {
+    background-image: url(im/4.jpg);
+    /* background-position: 0 0 */
+    /* background-position-y: 190%; */
+    background-size: cover;
+
+}
+
+.panel6 {
+    background-image: url(im/william-daigneault-fZmhlIEWVdA-unsplash.jpg);
+    /* background-position-y: 60%; */
+    background-size: cover;
+
+}
