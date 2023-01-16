@@ -1,0 +1,3 @@
+[submodule "zadaniya/zadaniya/task_2"]
+	path = zadaniya/zadaniya/task_2
+	url = https://github.com/google/googletest
